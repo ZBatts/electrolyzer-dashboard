@@ -1,0 +1,24 @@
+import numpy as np
+import pandas as pd
+
+# Initialize weights for the 13 synthetic coefficients
+# Each synthetic coefficient will be a weighted sum of the 4 features
+weights = np.random.randn(13, 4)  # 13 synthetic coefficients, 4 features
+
+def calculate_synthetic_coefficients(features, weights, base_coefficients):
+    """
+    Calculate synthetic coefficients as the base coefficients plus the weighted sum of the features.
+    :param features: Input features (temperature, current density, etc.) - Shape (n_samples, 4)
+    :param weights: Weights for the linear combination - Shape (13, 4)
+    :param base_coefficients: Initial base coefficients - Shape (13,)
+    :return: Synthetic coefficients - Shape (13, n_samples)
+    """
+    # Compute the weighted sum of the features
+    weighted_features = np.dot(weights, features.T)  # Shape (13, n_samples)
+    
+    # Add the base coefficients as the initial value for each synthetic coefficient
+    synthetic_coefficients = weighted_features + base_coefficients[:, np.newaxis]
+    
+    return synthetic_coefficients
+
+

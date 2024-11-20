@@ -1,0 +1,6 @@
+﻿Test Number,Cathode,Anode,Membrane,Temperature [C],Active Area [cm2],Cathode Pressure [barg],Anode Pressure [barg]
+1,0.1 mg_Pt/cm2 Pt/C,0.4 mg_Ir/cm2 IrO2,Nafion N115,80,5,,
+2,0.1 mg_Pt/cm2 TEC10V50E; MGL370,0.4 mg_Ir/cm2 Alfa Aesar IrO2,Nafion N115,80,50,5,0
+3,0.1 mg_Pt/cm2 TEC10V50E; MGL370,0.4 mg_Ir/cm2 Alfa Aesar IrO2,Nafion N212,80,50,5,0
+4,0.1 mg_Pt/cm2 TEC10V50E; MGL370,0.4 mg_Ir/cm2 Alfa Aesar IrO2,Nafion N212 + GRC,80,50,5,0
+5,2.5 mg/cm2 Pt Vulcan - supported,2.5 mg/cm2 Pt Unsupported,Nafion N115,90,7,,
